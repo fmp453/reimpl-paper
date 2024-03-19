@@ -1,5 +1,3 @@
-#　Hiper
-
 [Highly Personalized Text Embedding for Image Manipulation by Stable Diffusion](https://arxiv.org/abs/2303.08767)の再現実装
 
 必要なライブラリ
