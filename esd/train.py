@@ -37,7 +37,7 @@ def freeze_unfreeze_params(method: str, unet: UNet2DConditionModel) -> UNet2DCon
         param.requires_grad = False
     
     if method in ["ESD-x", "ESD-u"]:
-        # ESD-x: cross attention only (attn2)
+        # ESD-x: cross attention only (except attn1)
         # ESD-u: only non-cross attention (attn1)
         print("update parameters")
         for param_name, module in unet.named_modules():
